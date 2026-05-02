@@ -20,6 +20,30 @@ Data in `lead_optimization_spr_data.csv` are organized with the following column
 * `KD (nM)`: Dissociation constant in nM units
 * `pKD`: Negative logarithm of dissociation constant
 -----------------------------------------------------------------------------------------------------
+Data in `round2_il36ra_lead_optimization_spr_data.csv` are organized with the following columns:
+* `Heavy Chain`: Heavy chain variable domain sequence.
+* `Light Chain`: Light chain variable domain sequence.
+* `Mutations`: Mutations made from parent sequence (e.g. H-S31A is an S to A mutation at 1-indexed position 31 of the heavy chain).
+* `Number of Mutations`: Number of mutations made from parent sequence.
+* `Target`: Target antigen, in this case IL36RA.
+* `Human Binder`: Boolean indicating whether or not the design is a binder in human cells. 
+* `Human KD (nM)`: Dissociation constant in nM units.
+* `Human pKD`: Negative logarithm of dissociation constant.
+* `Mouse Binder`: Boolean indicating whether or not the design is a binder in mouse cells. 
+* `Mouse KD (nM)`: Dissociation constant in nM units.
+* `Mouse pKD`: Negative logarithm of dissociation constant.
+-----------------------------------------------------------------------------------------------------
+Data in `round2_col6a3_lead_optimization_spr_data.csv` are organized with the following columns:
+* `Heavy Chain`: Heavy chain variable domain sequence.
+* `Light Chain`: Light chain variable domain sequence.
+* `Mutations`: Mutations made from parent sequence (e.g. H-S31A is an S to A mutation at 1-indexed position 31 of the heavy chain).
+* `Number of Mutations`: Number of mutations made from parent sequence.
+* `Target`: Target antigen, in this case COL6A3.
+* `Binder`: Boolean indicating whether or not the design is a binder. 
+* `KD (nM)`: Dissociation constant in nM units.
+* `pKD`: Negative logarithm of dissociation constant.
+* `note`: Note relevant for interpreting result.
+-----------------------------------------------------------------------------------------------------
 The `abscibind` and `abscigen` folders contain the computational models generated for the reported designs by AbsciBind and AbsciGen, respectively.
 
 # Citations
