@@ -10,6 +10,16 @@ Data in `de_novo_spr_data.csv` are organized with the following columns:
 * `Framework`: Therapeutic antibody used for framework scaffold
 * `Epitope`: Epitope identifier
 * `Binder`: Boolean indicating whether or not the design is a binder
+
+Additional columns in `hits_subset`:
+* `oas_cdr3_pid_maxlen`: Percent sequence identity to the nearest HCDR3 in OAS. Calculated as 100 * (maxlen - edit_distance) / maxlen, where maxlen is the longer of the two sequences.
+* `oas_allcdr_pid_maxlen`: Percent sequence identity to the nearest CDRs in OAS. Calculated as 100 * (maxlen - edit_distance) / maxlen, where maxlen is the longer of the two sequences.
+* `sabdab_cdr3_pid_maxlen`: Percent sequence identity to the nearest HCDR3 in SAbDab. Calculated as 100 * (maxlen - edit_distance) / maxlen, where maxlen is the longer of the two sequences.
+* `sabdab_allcdr_pid_maxlen`: Percent sequence identity to the nearest CDRs in SAbDab. Calculated as 100 * (maxlen - edit_distance) / maxlen, where maxlen is the longer of the two sequences.
+
+OAS: Human paired OAS DB (580 studies/runs, OPIG, downloaded January 2026; most recent unit uploaded April 2025).  
+SAbDab: A curated antibody–antigen dataset of 10,045 PDB entries (accessed on July 10, 2025), which represents a superset of entries in SAbDab.  
+
 -----------------------------------------------------------------------------------------------------
 Data in `lead_optimization_spr_data.csv` are organized with the following columns:
 * `Heavy Chain`: Heavy chain variable domain sequence
