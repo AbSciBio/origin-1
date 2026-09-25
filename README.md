@@ -12,9 +12,13 @@ Data in `de_novo_spr_data.csv` are organized with the following columns:
 * `Binder`: Boolean indicating whether or not the design is a binder
 
 Additional columns in `hits_subset`:
-* `oas_cdr3_pid_maxlen`: Percent sequence identity to the nearest HCDR3 in OAS. 
+* `oas_cdr3_distance`: Levenshtein distance to nearest HCDR3 in OAS.
+* `oas_cdr3_pid_maxlen`: Percent sequence identity to the nearest HCDR3 in OAS.
+* `oas_allcdr_distance`: Levenshtein distance to the nearest CDRs in OAS.
 * `oas_allcdr_pid_maxlen`: Percent sequence identity to the nearest CDRs in OAS.
+* `sabdab_cdr3_distance`: Levenshtein distance to nearest HCDR3 in SAbDab.
 * `sabdab_cdr3_pid_maxlen`: Percent sequence identity to the nearest HCDR3 in SAbDab.
+* `sabdab_allcdr_distance`: Levenshtein distance to the nearest CDRs in SAbDab.
 * `sabdab_allcdr_pid_maxlen`: Percent sequence identity to the nearest CDRs in SAbDab.
 
 Percent sequence identity is calculated as 100 * (maxlen - edit_distance) / maxlen, where maxlen is the longer of the two sequences.  
